@@ -10,6 +10,7 @@ Essas instruções mostraram rodar os testes e2e do projeto `alurapic` utilizand
 Preste atenção nas coisas que você precisa instalar antes de sair executando o projeto ;) 
 
 **Tenha certeza que você possui o `Node.js >= 8.0` e `NPM` >= 5 instalados, caso não possua ->** https://nodejs.org/dist/v10.15.1/node-v10.15.1-x64.msi
+**Necessário ter o java >=7 instalado tambem**
 
 ```bash
 # clone o projeto
