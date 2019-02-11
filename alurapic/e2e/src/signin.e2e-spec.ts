@@ -17,7 +17,7 @@ const requestMatcherPhotos = {
   }
 };
 
-fdescribe('SinginPage', () => {
+describe('SinginPage', () => {
   beforeEach(async () => {
     await resetAllRequests();
     singinPage = new SinginPage();
@@ -95,7 +95,7 @@ fdescribe('SinginPage', () => {
 
       await singinPage.button.click();
 
-      expect(await browser.getCurrentUrl()).toEqual(`${browser.baseUrl}#user/flavio`);
+      expect(await browser.getCurrentUrl()).toEqual(`${browser.baseUrl}#/user/flavio`);
     });
 
 

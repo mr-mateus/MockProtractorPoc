@@ -13,7 +13,7 @@ const requestMatcherUserSignup = {
 };
 
 let signupPage: SignupPage;
-fdescribe('SignupPage', () => {
+describe('SignupPage', () => {
   beforeEach(async () => {
     await resetAllRequests();
     signupPage = new SignupPage();

@@ -13,22 +13,31 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
-  multiCapabilities: [{
-      'browserName': 'firefox',
-      marionette: true,
-      acceptSslCerts: true,
-      'moz:firefoxOptions': {
-        args: ["--headless"]
-      }
-    },
-    {
-      'browserName': 'chrome',
-      'chromeOptions': {
-        args: ['--headless', '--disable-gpu']
-      }
+  capabilities: {
+
+    'browserName': 'chrome',
+    'chromeOptions': {
+      args: ['--headless', '--disable-gpu']
     }
-  ],
-  //directConnect: true,
+  },
+  /*
+    firefox quebra muito os testes
+    multiCapabilities: [{
+        'browserName': 'firefox',
+        marionette: false,
+        version: '47.0.1',
+
+        'moz:firefoxOptions': {
+          args: ["--headless"]
+        }
+    } ,
+      {
+        'browserName': 'chrome',
+        'chromeOptions': {
+          args: ['--headless', '--disable-gpu']
+        }
+      }
+  ],*/
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
@@ -46,9 +55,9 @@ exports.config = {
         displayStacktrace: true
       }
     }));
-    /*jasmine.getEnv().addReporter(new HtmlReporter({
+    jasmine.getEnv().addReporter(new HtmlReporter({
       baseDirectory: 'tmp/screenshots'
-    }).getJasmine2Reporter());*/
+    }).getJasmine2Reporter());
   },
   SELENIUM_PROMISE_MANAGER: false
 };

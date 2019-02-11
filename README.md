@@ -73,4 +73,5 @@ npm start
 cd alurapic\e2e 
 protractor protractor.conf.js
 ```
+** o projeto está configurado para utilizar um plugin do protractor chamado ```protractor-beautiful-reporter```, com esse plugin após a execução dos testes, o resultado fica disponível em `\alurapic\tmp\screenshots\report.html`
 >  
