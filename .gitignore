@@ -41,3 +41,4 @@ Thumbs.db
 /run_mockserver/node_modules
 /alurapic/.vscode
 /alurapic/node_modules
+/alurapic/e2e/tmp
